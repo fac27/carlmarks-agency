@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Place CSS variables in here */
+    --main-bg-colour: #000;
+    --main-text-colour: #fff;
+}
+
+body {
+    font-family: 'Sarabun', sans-serif;
+    background-color: var(--main-bg-colour);
+    color: var(--main-text-colour);
+}

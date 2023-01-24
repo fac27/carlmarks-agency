@@ -6,10 +6,16 @@
     padding: 0;
 }
 
-:root {
-    /* Place CSS variables in here */
+html[data-theme="dark"] {
+    /* CSS variables for accessibility changes in here */
     --main-bg-colour: #000;
     --main-text-colour: #fff;
+}
+
+html[data-theme="light"] {
+    /* CSS variables for accessibility changes in here */
+    --main-bg-colour: #fff;
+    --main-text-colour: #000;
 }
 
 body {

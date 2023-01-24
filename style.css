@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
 * {
     box-sizing: border-box;
@@ -13,7 +13,41 @@
 }
 
 body {
-    font-family: 'Sarabun', sans-serif;
+    font-family: 'Nunito', sans-serif;
     background-color: var(--main-bg-colour);
     color: var(--main-text-colour);
+}
+
+.center {
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.width-small {
+    max-width: 20rem;
+}
+
+.width-large {
+    max-width: 40rem;
+}
+
+.width-extra-large {
+    max-width: 60rem;
+}
+
+.stack-small>*+* {
+    margin-top: 0.5rem;
+}
+
+.stack-medium>*+* {
+    margin-top: 1rem;
+}
+
+.stack-large>*+* {
+    margin-top: 2rem;
+}
+
+.stack-extra-large>*+* {
+    margin-top: 4rem;
 }

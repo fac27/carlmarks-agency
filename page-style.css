@@ -20,6 +20,7 @@ body {
     font-family: 'Nunito', sans-serif;
     background-color: var(--main-bg-colour);
     color: var(--main-text-colour);
+    overflow-x: hidden;
 }
 
 .center {
@@ -56,7 +57,15 @@ body {
     margin-top: 4rem;
 }
 
+#a11y-container {
+    z-index: 2;
+    position: absolute;
+    left: calc(100vw - 4rem);
+    top: 8rem;
+}
+
 #a11y-icon {
+    display: inline-block;
     width: 3rem;
     height: 3rem;
     fill:var(--main-bg-colour);
@@ -71,14 +80,16 @@ body {
 }
 
 #a11y-nav {
+    display:inline-block;
     background: var(--main-text-colour);
     width: 20vw;;
     padding: 5px 10px;
     margin-top: 10px;
     position: absolute;
     right: -20vw;
-    box-sizing: border-box;
     transition: right 0.3s ease-in-out;
+    overflow: hidden;
+    background-color: aqua;
 }
 
 #a11y-nav ul {

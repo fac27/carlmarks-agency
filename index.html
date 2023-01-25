@@ -7,13 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to the CarlMarks Web Agency</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="accessibility-styles.css">
+    <link rel="stylesheet" href="landingStyle.css">
 </head>
 
 <body data-theme="dark">
-    <!--
-        Collapsible toolbar for accessibility view modifications. Hidden until activated.
-     -->
+    <section class="landing">
+
+        <video class="video-bg" autoplay loop muted plays-inline src="assets/banner-keyboard.mp4"></video>
+        <div class="overlay"></div>
+
+        <header>
+            <figure>
+                <img id="KmLogo" src="assets/KarlMarx.jpeg" alt="">
+            </figure>
+            <nav>
+                <ol>
+                    <li class=""><a href="#">Agency intro</a></li>
+                    <li class=""><a href="#">The team</a></li>
+                    <li class=""><a href="#">Contact</a></li>
+                </ol>
+            </nav>
+            <figure><img id="menuIcon" src="assets/menuIcon2.png" alt=""></figure>
+        </header>
+
+        <aside></aside>
+
+        <article>
+            <h1></h1>
+        </article>
+
+    </section>
 
     <label for="a11y-trigger">
         <input type="checkbox" id="a11y-trigger" />
@@ -30,16 +53,8 @@
             </ul>
         </nav>
     </label>
-    <!-- 
-        Header section contains page title and navigation links
-     -->
-    <header>
-        <h1>Carl-Marks Web Design Agency</h1>
-        <!-- Page navigation -->
-        <nav id="page-navigation">
-
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <main>
         <!-- Landing section  - introductory text-->
@@ -100,8 +115,14 @@
      -->
     <footer>
 
-    </footer>
 
+        <figure>
+            <img id="KmLogoFooter" src="assets/KarlMarx.jpeg" alt="">
+        </figure>
+
+        <p>© 2023 CarlMarksWebagency. All Rights Reserved</p>
+
+    </footer>
     <script src="app.js"></script>
 </body>
 

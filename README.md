@@ -16,6 +16,10 @@ An intuitive and easy to navigate website, enormously improves my productivity t
 - [ ] Contact form
 - [ ] Easy to find accessibility menu
 - [ ] Able to change various display features of the website
+- [ ] User cannot submit a form without filling out all of the mandatory fields
+- [ ] Information from the form doesn’t get submitted until the user clicks a button
+#### Stretch:
+- [x] Use the automatic trigger functionality of GitHub project board
 
 
 ## Wireframe:

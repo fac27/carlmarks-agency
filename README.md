@@ -11,11 +11,11 @@ An intuitive and easy to navigate website, enormously improves my productivity t
 
 ## Acceptance criteria
 
-Navigate to other sections of the page from the homepage/landing
-Have brief descriptions of the team/developers
-Contact form
-Easy to find accessibility menu
-Able to change various display features of the website
+- [ ] Navigate to other sections of the page from the homepage/landing
+- [ ] Have brief descriptions of the team/developers
+- [ ] Contact form
+- [ ] Easy to find accessibility menu
+- [ ] Able to change various display features of the website
 
 
 ## Wireframe:

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@300&display=swap');
 
 * {
     box-sizing: border-box;
@@ -14,6 +14,10 @@
 [data-theme="light"] {
     --main-bg-colour: #fff;
     --main-text-colour: #000;
+}
+
+html {
+    font-size: 18px;
 }
 
 body {
@@ -42,19 +46,31 @@ body {
 }
 
 .stack-small>*+* {
-    margin-top: 0.5rem;
-}
-
-.stack-medium>*+* {
     margin-top: 1rem;
 }
 
-.stack-large>*+* {
+.stack-medium>*+* {
     margin-top: 2rem;
+}
+
+.stack-large>*+* {
+    margin-top: 3rem;
 }
 
 .stack-extra-large>*+* {
     margin-top: 4rem;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.5rem 0;
 }
 
 #a11y-container {

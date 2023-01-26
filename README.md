@@ -24,7 +24,7 @@ An intuitive and easy to navigate website, enormously improves my productivity t
 
 ## Wireframe:
 
-![](assets/LandingIMG.svg)
-![](assets/Section2IMG.svg)
-![](assets/Section3IMG.svg)
-![](assets/FooterIMG.svg)
+![](assets/landing-img.svg)
+![](assets/section-2-img.svg)
+![](assets/section-3-img.svg)
+![](assets/footer-img.svg)

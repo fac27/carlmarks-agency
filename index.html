@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to the CarlMarks Web Agency</title>
-    <link rel="stylesheet" href="page-style.css">
-    <link rel="stylesheet" href="landing-style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body data-theme="dark">
@@ -20,8 +19,8 @@
                 <img id="km-logo" src="assets/karl-marx.jpeg" alt="">
             </figure>
             <nav>
-                <ol>
-                    <li class=""><a href="#">Agency intro</a></li>
+                <ol class="gap-small">
+                    <li class=""><a href="#">Introduction</a></li>
                     <li class=""><a href="#">The team</a></li>
                     <li class=""><a href="#">Contact</a></li>
                 </ol>
@@ -65,10 +64,11 @@
     </section>
 
 
-    <main class="width-extra-large center stack-large">
+    <main class="width-large center stack-medium">
         <!-- Landing section  - introductory text-->
-        <section id="section-landing stack-medium">
-            <h2>THE REVOLUTIONARY WEB DEVELOPMENT AGENCY</h2>
+        <section id="section--introduction" class="section-landing justified">
+            <h2>The revolutionary web development agency</h2>
+            <div class="line-height__expanded">
             <p>
                 Welcome to the CarlMarks Web Development Agency.
             </p>
@@ -88,11 +88,13 @@
             <p>
                 Don’t be a pleb – start your next web project with us TODAY!
             </p>
+            </div> 
         </section>
 
         <!--  Meet the team section - biog and image of team -->
-        <section id="section-team">
-            <h2>MEET THE TEAM</h2>
+        <section id="section-team" class="">
+            <h2>Meet the team</h2>
+            <div class="line-height__expanded">
             <p>
                 Meet Carl, a senior web developer with over 10 days of experience in the industry. He specializes in
                 building scalable and high-performance web applications using the latest technologies. Carl is a
@@ -111,16 +113,19 @@
                 and PHP. Mark is experienced in building web applications using modern frameworks such as Node.js and
                 Express. He is also proficient in using databases such as MySQL and MongoDB.
             </p>
+            </div>
         </section>
 
         <!-- Contact section - conatins contact form -->
         <section id="section-contact">
-            <h2>GET IN TOUCH</h2>
+            <h2>Get in touch</h2>
+            <div class="line-height__expanded">
             <p>
                 Need a class act to help you to realise your next web project? Fill in the form and we'll get right
                 back
                 to you.
             </p>
+        </div>
         </section>
     </main>
 

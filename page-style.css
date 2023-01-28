@@ -66,7 +66,7 @@ h1 {
     font-size: 2.5rem;
 }
 
-h2{
+h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     text-align: center;
@@ -88,7 +88,7 @@ h2{
     right: 0;
     width: 3rem;
     height: 3rem;
-    fill:var(--main-bg-colour);
+    fill: var(--main-bg-colour);
     padding: 0.5rem;
     background-color: var(--main-text-colour);
     border-radius: 5px;
@@ -106,7 +106,7 @@ h2{
 }
 
 #a11y-nav {
-    display:inline-block;
+    display: inline-block;
     background: var(--main-text-colour);
     width: 15rem;
     padding: 5px 10px;
@@ -132,88 +132,133 @@ h2{
     text-decoration: underline;
 }
 
-#a11y-trigger:checked ~ #a11y-nav  {
+#a11y-trigger:checked~#a11y-nav {
     right: 0;
     transition: right 0.2s ease-in-out;
 }
-#a11y-trigger:checked ~ #a11y-icon {
+
+#a11y-trigger:checked~#a11y-icon {
     right: 15rem;
     transition: right 0.2s ease-in-out;
 }
 
 #a11y-trigger {
-    display:none;
+    display: none;
 }
 
 /* Section: Landing */
 
-.landing {
-    
-  }
- 
- /* Video background */
- 
- .video-bg {
+.landing {}
+
+/* Video background */
+
+.video-bg {
     width: 100vw;
     height: auto;
     z-index: 0;
     opacity: 0.9;
     border-bottom: 5px solid red;
-  }
- 
-  /* Header */
- 
-  header {
+}
+
+/* Header */
+
+header {
     z-index: 1;
     display: flex;
     align-items: center;
     position: fixed;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 20px;
+    width: 100vw;
     top: 0;
-  }
- 
-  #km-logo {
+    background-color: none;
+    justify-content: space-between;
+}
+
+#km-logo {
     width: 80px;
     height: auto;
     border-radius: 50px;
     border: 3px solid red;
-  }
-  
-  #menu-icon {
+    margin: 25px 20px 20px 20px;
+}
+
+#menu-icon {
     color: aliceblue;
-  }
+    margin: 25px 20px 20px 20px;
+}
 
-  header nav {
-    display: flex;
-  }
+#heading-nav {
+    display: none;
+}
 
-  header nav ol li {
+header nav ol li {
     display: inline;
     padding: 10px;
     background-color: red;
     border-radius: 5px;
     margin: 2vw;
+}
+
+/* Hamburger menu */
+
+#hamburger-nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#hamburger-nav ul {
+    list-style-type: none;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+#hamburger-nav a {
+    text-decoration: none;
+}
+
+#close-button {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Hamburger Media queries */
+
+@media only screen and (min-width: 500px) {
+    #heading-nav {
+        display: flex;
+    }
+    #menu-icon {
+        display: none;
+    }
   }
-  
-  /* Footer */
-  
-  #km-logo-footer {
+
+/* Footer */
+
+#km-logo-footer {
     width: 80px;
     height: auto;
     border-radius: 50px;
     border: 3px solid red;
-  }
-  
-  footer {
+}
+
+footer {
     border-top: 5px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  footer figure {
+}
+
+footer figure {
     padding: 10px;
-  }
+}
+

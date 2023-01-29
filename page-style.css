@@ -171,6 +171,7 @@ header {
     top: 0;
     background-color: none;
     justify-content: space-between;
+    background: linear-gradient(black, 65%, rgba(249, 248, 248, 0));
 }
 
 #km-logo {

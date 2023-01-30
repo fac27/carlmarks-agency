@@ -10,11 +10,12 @@
     --main-bg-colour: rgb(62, 68, 80);
     --main-text-colour: #fff;
     --main-bg-colour-opacity-zero: rgba(62, 68, 80, 0);
-    --biog-text-colour: #000;
-    --biog-bg-colour1: rgb(171, 212, 226);
-    --biog-bg-colour2: rgb(255, 155, 155);
-    --biog-bg-colour3: rgb(195, 255, 195);
+    --team-text-colour: #000;
+    --team-bg-colour1: rgb(171, 212, 226);
+    --team-bg-colour2: rgb(255, 155, 155);
+    --team-bg-colour3: rgb(195, 255, 195);
     --form-bg-colour: rgb(191, 182, 199);
+    --form-text-colour: #000;
 }
 
 [data-theme="dark"] {
@@ -247,26 +248,43 @@ footer figure {
     padding: 10px;
 }
 
-.grid-container {
+.team-grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1rem;
 }
 
-.grid-item {
+.team-grid-item {
+    color: var(--team-text-colour);
     padding: 20px;
     text-align: center;
     border-radius: 6px;
+}
+
+/* Cycle through background colours of meet the team biog grid items */
+.team-grid-container .team-grid-item:nth-child(3n-2) {
+    background-color: var(--team-bg-colour1);
+}
+
+.team-grid-container .team-grid-item:nth-child(3n-1) {
+    background-color: var(--team-bg-colour2);
+}
+
+.team-grid-container .team-grid-item:nth-child(3n) {
+    background-color: var(--team-bg-colour3);
 }
 
 .biog-image {
     width: 200px;
     height: auto;
     border-radius: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 1em;
 }
 
-form {
+.contact-form {
+    background-color: var(--form-bg-colour);
+    padding: 2rem;
+    text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -278,14 +296,27 @@ form {
     margin: 2rem auto;
 }
 
-label, input {
-    font-family: inherit;
-    font-size: inherit;
+.form-element-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-form div {
-    width: 30%;
-    margin: 0 10px;
+.form-element-container label {
+    color: var(--form-text-colour);
+    font-family: inherit;
+    font-size: inherit;
+    width: 20em;
+}
+
+.form-element-container input {
+    color: var(--form-text-colour);
+    font-family: inherit;
+    font-size: inherit;
+    width: 20em;
+    padding: 0.2rem 1rem;
+    border: none;
+    border-radius: 6px;;
 }
 
 [class^="width-"] {

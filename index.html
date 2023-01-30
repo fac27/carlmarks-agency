@@ -18,16 +18,26 @@
             <figure>
                 <img id="km-logo" src="assets/image-marx.jpeg" alt="">
             </figure>
-            <nav>
-                <ol class="gap-small">
-                    <li class=""><a href="#section-introduction">Introduction</a></li>
-                    <li class=""><a href="#section-team">The team</a></li>
-                    <li class=""><a href="#section-contact">Contact</a></li>
+            <nav id="heading-nav">
+                <ol>
+                    <li class=""><a href="#">Agency intro</a></li>
+                    <li class=""><a href="#">The team</a></li>
+                    <li class=""><a href="#">Contact</a></li>
                 </ol>
             </nav>
-            <figure><img id="menu-icon" src="assets/menu-icon.png" alt=""></figure>
+            <figure>
+                <!-- Was id="heading-nav" -->
+                <nav id="hamburger-nav" >
+                    <img id="close-button" onclick="closeMenuToggle()" src="assets/x-icon.png" alt="">
+                    <ul class="gap-small">
+                        <li><a href="#section-introduction">About</a></li>
+                        <li><a href="#section-team">The team</a></li>
+                        <li><a href="#section-contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <img id="menu-icon" onclick="hamburgerToggle()"  src="assets/menu-icon.png" alt="">
+            </figure>
         </header>
-
         <div id="a11y-container">
             <label for="a11y-trigger">
                 <input type="checkbox" id="a11y-trigger" />
@@ -48,15 +58,6 @@
                 </nav>
             </label>
         </div>
-
-
-
-
-        <aside></aside>
-
-        <article>
-            <h1></h1>
-        </article>
 
     </section>
 
@@ -118,7 +119,7 @@
             </div>
         </section>
 
-        <!-- Contact section - conatins contact form -->
+        <!-- Contact section - contains contact form -->
         <section id="section-contact">
             <h2>Get in touch</h2>
             <div class="line-height__expanded stack-small center">

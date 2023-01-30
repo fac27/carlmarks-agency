@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+[data-theme="colour"] {
+    --main-bg-colour: rgb(62, 68, 80);
+    --main-text-colour: #fff;
+    --main-bg-colour-opacity-zero: rgba(62, 68, 80, 0);
+    --team-text-colour: #000;
+    --team-bg-colour1: rgb(171, 212, 226);
+    --team-bg-colour2: rgb(255, 155, 155);
+    --team-bg-colour3: rgb(195, 255, 195);
+    --form-bg-colour: rgb(191, 182, 199);
+    --form-text-colour: #000;
+}
+
+[data-theme="dark"] {
+    --main-bg-colour: #000;
+    --main-text-colour: #fff;
+    --main-bg-colour-opacity-zero: rgba(0, 0, 0, 0);
+}
+
+[data-theme="light"] {
+    --main-bg-colour: #fff;
+    --main-text-colour: #000;
+    --main-bg-colour-opacity-zero: rgba(255, 255, 255, 0);
+}
+
+[data-theme="monochrome"] {
+    --main-bg-colour: #000;
+    --main-text-colour: #fff;
+    --main-bg-colour-opacity-zero: rgba(255, 255, 255, 0);
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--main-bg-colour);
+    color: var(--main-text-colour);
+    overflow-x: hidden;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.justified {
+    text-align: justify;
+}
+
+.line-height__expanded {
+    line-height: 1.4;
+}
+
+.stack-small>*+* {
+    margin-top: 1rem;
+}
+
+.stack-medium>*+* {
+    margin-top: 2rem;
+}
+
+.stack-large>*+* {
+    margin-top: 14rem;
+}
+
+.stack-extra-large>*+* {
+    margin-top: 4rem;
+}
+
+.gap-small>*+* {
+    margin-left: 1em;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+#a11y-container {
+    z-index: 2;
+    position: fixed;
+    left: 100%;
+    top: 8rem;
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+}
+
+#a11y-icon {
+    position: absolute;
+    right: 0;
+    width: 3rem;
+    height: 3rem;
+    fill: var(--main-bg-colour);
+    padding: 0.5rem;
+    background-color: var(--main-text-colour);
+    border-radius: 5px;
+    transition: right 0.2s ease-in-out;
+    opacity: 60%;
+}
+
+#a11y-icon:hover {
+    cursor: pointer;
+    opacity: 100%;
+}
+
+#a11y-icon:focus {
+    outline: solid;
+    outline-color: var(--main-bg-colour);
+}
+
+#a11y-nav {
+    display: inline-block;
+    background: var(--main-text-colour);
+    width: 10rem;
+    padding: 5px 10px;
+    position: absolute;
+    right: -10rem;
+    transition: right 0.2s ease-in-out;
+    overflow: hidden;
+    background-color: var(--main-text-colour);
+    color: var(--main-bg-colour);
+    border-radius: 5px;
+}
+
+#a11y-nav ul {
+    list-style-type: none;
+}
+
+#a11y-nav a {
+    text-decoration: none;
+    color: var(--main-bg-colour);
+}
+
+#a11y-nav a:hover {
+    text-decoration: underline;
+}
+
+#a11y-trigger:checked~#a11y-nav {
+    right: 0;
+    transition: right 0.2s ease-in-out;
+}
+
+#a11y-trigger:checked~#a11y-icon {
+    right: 10rem;
+    transition: right 0.2s ease-in-out;
+    opacity: 100%;
+}
+
+#a11y-trigger {
+    display: none;
+}
+
+/* Video background */
+
+.video-bg {
+    width: 100vw;
+    height: auto;
+    z-index: 0;
+    opacity: 0.9;
+    border-bottom: 5px solid red;
+    margin-block-end: 1rem;
+}
+
+/* Header */
+
+header {
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+    position: fixed;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 20px;
+    top: 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, var(--main-bg-colour) 0%, var(--main-bg-colour), var(--main-bg-colour-opacity-zero) 100%);
+    height: 25vh;
+}
+
+#km-logo {
+    width: 80px;
+    height: auto;
+    border-radius: 50px;
+    border: 3px solid red;
+}
+
+#menu-icon {
+    color: aliceblue;
+}
+
+header nav {
+    margin-block-start: 1em;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--main-text-colour);
+    font-size: 1.5rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+header nav ol li {
+    display: inline;
+    padding: 10px;
+    /* background-color: red; */
+    border-radius: 5px;
+    /* margin: 2vw; */
+}
+
+/* Footer */
+
+#km-logo-footer {
+    width: 80px;
+    height: auto;
+    border-radius: 50px;
+    border: 3px solid red;
+}
+
+footer {
+    border-top: 5px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer figure {
+    padding: 10px;
+}
+
+.team-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+}
+
+.team-grid-item {
+    color: var(--team-text-colour);
+    padding: 20px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+/* Cycle through background colours of meet the team biog grid items */
+.team-grid-container .team-grid-item:nth-child(3n-2) {
+    background-color: var(--team-bg-colour1);
+}
+
+.team-grid-container .team-grid-item:nth-child(3n-1) {
+    background-color: var(--team-bg-colour2);
+}
+
+.team-grid-container .team-grid-item:nth-child(3n) {
+    background-color: var(--team-bg-colour3);
+}
+
+.biog-image {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+.contact-form {
+    background-color: var(--form-bg-colour);
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    width: 30%;
+    min-width: 24rem;
+    margin: 2rem auto;
+}
+
+.form-element-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-element-container label {
+    color: var(--form-text-colour);
+    font-family: inherit;
+    font-size: inherit;
+    width: 20em;
+}
+
+.form-element-container input {
+    color: var(--form-text-colour);
+    font-family: inherit;
+    font-size: inherit;
+    width: 20em;
+    padding: 0.2rem 1rem;
+    border: none;
+    border-radius: 6px;;
+}
+
+[class^="width-"] {
+    max-width: 95vw;
+}
+
+@media only screen and (min-width: 768px) {
+    .width-small {
+        max-width: 20rem;
+    }
+
+    .width-medium {
+        max-width: 40rem;
+    }
+
+    .width-large {
+        max-width: 60rem;
+    }
+}
+
+
+
+/* ========================================================= */
+/* MERGED ALL OF UPDATED PAGE-STYLE CSS FILE HERE */
+
+/*
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+[data-theme="dark"] {
+    --main-bg-colour: #000;
+    --main-text-colour: #fff;
+}
+
+[data-theme="light"] {
+    --main-bg-colour: #fff;
+    --main-text-colour: #000;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--main-bg-colour);
+    color: var(--main-text-colour);
+    overflow-x: hidden;
+}
+
+.center {
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.width-small {
+    max-width: 20rem;
+}
+
+.width-large {
+    max-width: 40rem;
+}
+
+.width-extra-large {
+    max-width: 60rem;
+}
+
+.stack-small>*+* {
+    margin-top: 1rem;
+}
+
+.stack-medium>*+* {
+    margin-top: 2rem;
+}
+
+.stack-large>*+* {
+    margin-top: 3rem;
+}
+
+.stack-extra-large>*+* {
+    margin-top: 4rem;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+#a11y-container {
+    z-index: 2;
+    position: absolute;
+    left: 100%;
+    top: 8rem;
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+}
+
+#a11y-icon {
+    position: absolute;
+    right: 0;
+    width: 3rem;
+    height: 3rem;
+    fill: var(--main-bg-colour);
+    padding: 0.5rem;
+    background-color: var(--main-text-colour);
+    border-radius: 5px;
+    transition: right 0.2s ease-in-out;
+}
+
+#a11y-icon:hover {
+    cursor: pointer;
+    opacity: 90%;
+}
+
+#a11y-icon:focus {
+    outline: solid;
+    outline-color: var(--main-bg-colour);
+}
+
+#a11y-nav {
+    display: inline-block;
+    background: var(--main-text-colour);
+    width: 15rem;
+    padding: 5px 10px;
+    position: absolute;
+    right: -15rem;
+    transition: right 0.2s ease-in-out;
+    overflow: hidden;
+    background-color: var(--main-text-colour);
+    color: var(--main-bg-colour);
+    border-radius: 5px;
+}
+
+#a11y-nav ul {
+    list-style-type: none;
+}
+
+#a11y-nav a {
+    text-decoration: none;
+    color: var(--main-bg-colour);
+}
+
+#a11y-nav a:hover {
+    text-decoration: underline;
+}
+
+#a11y-trigger:checked~#a11y-nav {
+    right: 0;
+    transition: right 0.2s ease-in-out;
+}
+
+#a11y-trigger:checked~#a11y-icon {
+    right: 15rem;
+    transition: right 0.2s ease-in-out;
+}
+
+#a11y-trigger {
+    display: none;
+}
+
+/* Section: Landing 
+
+.landing {}
+
+/* Video background 
+
+.video-bg {
+    width: 100vw;
+    height: auto;
+    z-index: 0;
+    opacity: 0.9;
+    border-bottom: 5px solid red;
+}
+
+/* Header 
+
+header {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    background-color: none;
+    justify-content: space-between;
+}
+
+#km-logo {
+    width: 80px;
+    height: auto;
+    border-radius: 50px;
+    border: 3px solid red;
+    margin: 25px 20px 20px 20px;
+}
+
+#menu-icon {
+    color: aliceblue;
+    margin: 25px 20px 20px 20px;
+}
+
+#heading-nav {
+    display: none;
+}
+
+header nav ol li {
+    display: inline;
+    padding: 10px;
+    background-color: red;
+    border-radius: 5px;
+    margin: 2vw;
+}
+
+/* Hamburger menu 
+
+#hamburger-nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#hamburger-nav ul {
+    list-style-type: none;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+#hamburger-nav a {
+    text-decoration: none;
+}
+
+#close-button {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Hamburger Media queries 
+
+@media only screen and (min-width: 500px) {
+    #heading-nav {
+        display: flex;
+    }
+    #menu-icon {
+        display: none;
+    }
+  }
+
+/* Footer 
+
+#km-logo-footer {
+    width: 80px;
+    height: auto;
+    border-radius: 50px;
+    border: 3px solid red;
+}
+
+footer {
+    border-top: 5px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer figure {
+    padding: 10px;
+}
+
+ */

@@ -6,18 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to the CarlMarks Web Agency</title>
-    <link rel="stylesheet" href="page-style.css">
-    <link rel="stylesheet" href="landing-style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body data-theme="dark">
+<body data-theme="colour">
     <section class="landing">
 
         <video class="video-bg" autoplay loop muted plays-inline src="assets/banner-keyboard.mp4"></video>
 
         <header>
             <figure>
-                <img id="km-logo" src="assets/karl-marx.jpeg" alt="">
+                <img id="km-logo" src="assets/image-marx.jpeg" alt="">
             </figure>
             <nav id="heading-nav">
                 <ol>
@@ -27,18 +26,18 @@
                 </ol>
             </nav>
             <figure>
+                <!-- Was id="heading-nav" -->
                 <nav id="hamburger-nav" >
                     <img id="close-button" onclick="closeMenuToggle()" src="assets/x-icon.png" alt="">
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">The team</a></li>
-                        <li><a href="#">Contact</a></li>
+                    <ul class="gap-small">
+                        <li><a href="#section-introduction">About</a></li>
+                        <li><a href="#section-team">The team</a></li>
+                        <li><a href="#section-contact">Contact</a></li>
                     </ul>
                 </nav>
                 <img id="menu-icon" onclick="hamburgerToggle()"  src="assets/menu-icon.png" alt="">
             </figure>
         </header>
-      
         <div id="a11y-container">
             <label for="a11y-trigger">
                 <input type="checkbox" id="a11y-trigger" />
@@ -63,62 +62,90 @@
     </section>
 
 
-    <main class="width-extra-large center stack-large">
+    <main class="width-large center stack-medium">
         <!-- Landing section  - introductory text-->
-        <section id="section-landing stack-medium">
-            <h2>THE REVOLUTIONARY WEB DEVELOPMENT AGENCY</h2>
-            <p>
-                Welcome to the CarlMarks Web Development Agency.
-            </p>
-            <p>
-                Founded as long ago as early 2023, we at CarlMarks specialise in working closely alongside our clients
-                to create web-based solutions that fit their needs perfectly. We can take your fledgling idea and,
-                utilising our days and days of web development experience, bring it to life before your eyes.
-            </p>
-            <p>
-                Based in the state-of-the-art Space4 offices in Finsbury Park, London, we have worked with imaginary
-                clients from as far away as Holloway Road.
-            </p>
-            <p>
-                Check out our ‘About us’ section to find out about our talented developers, or head straight to our
-                contact form to get in touch to discuss your requirements.
-            </p>
-            <p>
-                Don’t be a pleb – start your next web project with us TODAY!
-            </p>
+        <section id="section-introduction" class="section-landing justified">
+            <h2>The revolutionary web development agency</h2>
+            <div class="line-height__expanded stack-small">
+                <p>
+                    Welcome to the CarlMarks Web Development Agency.
+                </p>
+                <p>
+                    Founded as long ago as early 2023, we at CarlMarks specialise in working closely alongside our
+                    clients
+                    to create web-based solutions that fit their needs perfectly. We can take your fledgling idea and,
+                    utilising our days and days of web development experience, bring it to life before your eyes.
+                </p>
+                <p>
+                    Based in the state-of-the-art Space4 offices in Finsbury Park, London, we have worked with imaginary
+                    clients from as far away as Holloway Road.
+                </p>
+                <p>
+                    Check out our ‘About us’ section to find out about our talented developers, or head straight to our
+                    contact form to get in touch to discuss your requirements.
+                </p>
+                <p>
+                    <strong>Don’t be a pleb – start your next web project with us TODAY!</strong>
+                </p>
+            </div>
         </section>
 
         <!--  Meet the team section - biog and image of team -->
-        <section id="section-team">
-            <h2>MEET THE TEAM</h2>
-            <p>
-                Meet Carl, a senior web developer with over 10 days of experience in the industry. He specializes in
-                building scalable and high-performance web applications using the latest technologies. Carl is a
-                full-stack developer, and is well-versed in languages such as JavaScript, Python, and Ruby. He is also
-                proficient in front-end frameworks such as React and Angular.
-            </p>
-            <p>
-                Meet Paloma, a web developer with a passion for creating beautiful and user-friendly websites. She has
-                experience in both front-end and back-end development, and is skilled in HTML, CSS, and JavaScript.
-                Paloma is also experienced in using popular content management systems such as WordPress and Shopify. She
-                is committed to creating responsive and accessible websites for all users.
-            </p>
-            <p>
-                Meet Mark, a web developer with a background in computer science. He has a strong understanding of
-                web development and is skilled in using a variety of programming languages including JavaScript, Python,
-                and PHP. Mark is experienced in building web applications using modern frameworks such as Node.js and
-                Express. He is also proficient in using databases such as MySQL and MongoDB.
-            </p>
+        <section id="section-team" class="">
+            <h2>Meet the team</h2>
+            <div class="line-height__expanded stack-small">
+                <div class="team-grid-container">
+                    <div class="team-grid-item">
+                        <img class="biog-image" src="./assets/image-albert.png" alt="Gordon Blevins portrait">
+                        <h3>Gordon Blevins</h3>
+                        <p>Gordon is a full-stack web developer with over 5 years of experience. He specializes in
+                            building efficient and user-friendly websites using modern technologies such as React and
+                            Node.js.</p>
+                    </div>
+                    <div class="team-grid-item">
+                        <img class="biog-image" src="./assets/image-paloma.png" alt="Malaika Rosales portrait">
+                        <h3>Malaika Rosales</h3>
+                        <p>Malaika is a front-end developer with a passion for creating visually appealing websites. She
+                            has a strong eye for design and uses CSS and HTML to bring her ideas to life.</p>
+                    </div>
+                    <div class="team-grid-item">
+                        <img class="biog-image" src="./assets/image-tas.png" alt="Kabir Perez portrait">
+                        <h3>Kabir Perez</h3>
+                        <p>Kabir is a back-end developer with extensive experience in building secure and scalable
+                            systems. He is proficient in PHP, MySQL and has a deep understanding of server-side
+                            technologies.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- Contact section - conatins contact form -->
+        <!-- Contact section - contains contact form -->
         <section id="section-contact">
-            <h2>GET IN TOUCH</h2>
-            <p>
-                Need a class act to help you to realise your next web project? Fill in the form and we'll get right
-                back
-                to you.
-            </p>
+            <h2>Get in touch</h2>
+            <div class="line-height__expanded stack-small center">
+                <p>
+                    Need a class act to help you to realise your next web project? Fill in the form and we'll get right
+                    back
+                    to you.
+                </p>
+            </div>
+            <form class="contact-form">
+                <div class="form-element-container">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" aria-label="Name input" required
+                        style="margin-bottom: 10px;">
+
+                    <label for="company">Company Name:</label>
+                    <input type="text" id="company" name="company" aria-label="Company Name input" required
+                        style="margin-bottom: 10px;">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" aria-label="Email input" required
+                        style="margin-bottom: 10px;">
+
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
         </section>
     </main>
 
@@ -129,7 +156,7 @@
 
 
         <figure>
-            <img id="km-logo-footer" src="assets/karl-marx.jpeg" alt="">
+            <img id="km-logo-footer" src="assets/image-marx.jpeg" alt="Carl Marx portrait">
         </figure>
 
         <p>© 2023 CarlMarksWebagency. All Rights Reserved</p>

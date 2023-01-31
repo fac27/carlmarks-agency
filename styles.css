@@ -229,7 +229,6 @@ header {
 }
 
 header nav {
-    margin-block-start: 1em;
 }
 
 header nav a {
@@ -243,11 +242,8 @@ nav a:hover {
 }
 
 header nav ol li {
-    display: inline;
-    padding: 10px;
-    /* background-color: red; */
-    border-radius: 5px;
-    /* margin: 2vw; */
+  list-style: none;
+  border-radius: 5px;
 }
 
 /* Footer */
@@ -384,5 +380,28 @@ footer figure {
     .contact-form {
         width: 30%;
         min-width: 24rem;
+    }
+}
+
+/* This applies from 600px onwards */
+@media (min-width: 650px) {
+    header nav {
+        margin-block-start: 1em;
+    }
+    
+    header nav a {
+        text-decoration: none;
+        color: var(--main-text-colour);
+        font-size: 1.5rem;
+    }
+    
+    nav a:hover {
+        text-decoration: underline;
+    }
+    
+    header nav ol li {
+        display: inline;
+        padding: 10px;
+        border-radius: 5px;
     }
 }

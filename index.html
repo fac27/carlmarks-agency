@@ -51,9 +51,12 @@
                 </svg>
                 <nav id="a11y-nav">
                     <ul>
-                        <li><a href="#">Choice 1</a></li>
-                        <li><a href="#">Choice 2</a></li>
-                        <li><a href="#">Choice 3</a></li>
+                        <li><a href="#" aria-label="Select colour theme" onclick="changeTheme('colour')">Colour theme</a></li>
+                        <li><a href="#" aria-label="Select dark theme" onclick="changeTheme('dark')">Dark theme</a></li>
+                        <li><a href="#" aria-label="Select light theme" onclick="changeTheme('light')">Light theme</a></li>
+                        <li><a href="#" aria-label="Select monochrome theme" onclick="changeTheme('monochrome')">Monochrome theme</a></li>
+                        <li><a href="#" aria-label="Increase text size" onclick="changeFontSize('increase')">Text size+</a></li>
+                        <li><a href="#" aria-label="Decrease text size" onclick="changeFontSize('decrease')">Text size-</a></li>
                     </ul>
                 </nav>
             </label>

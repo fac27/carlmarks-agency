@@ -126,6 +126,7 @@ h2 {
 }
 
 #a11y-icon {
+    z-index: 3                          ;
     position: absolute;
     right: 0;
     width: 3rem;
@@ -144,8 +145,7 @@ h2 {
 }
 
 #a11y-icon:focus {
-    outline: solid;
-    outline-color: var(--main-bg-colour);
+
 }
 
 #a11y-nav {
@@ -186,6 +186,12 @@ h2 {
     opacity: 100%;
 }
 
+#a11y-trigger:focus #a11y-icon {
+    outline: solid;
+    outline-color: var(--main-bg-colour);
+    opacity: 100%;
+}
+
 #a11y-trigger {
     display: none;
 }
@@ -199,6 +205,7 @@ h2 {
     opacity: 0.9;
     border-bottom: 5px solid red;
     margin-block-end: 1rem;
+    pointer-events: none;
 }
 
 /* Header */

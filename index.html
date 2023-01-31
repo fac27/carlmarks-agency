@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body data-theme="colour">
+<body data-theme="colour" class="enter">
     <section class="landing">
 
         <video class="video-bg" autoplay loop muted plays-inline src="assets/banner-keyboard.mp4"></video>
@@ -39,12 +39,17 @@
                 </svg>
                 <nav id="a11y-nav">
                     <ul>
-                        <li><a href="#" aria-label="Select colour theme" onclick="changeTheme('colour')">Colour theme</a></li>
+                        <li><a href="#" aria-label="Select colour theme" onclick="changeTheme('colour')">Colour
+                                theme</a></li>
                         <li><a href="#" aria-label="Select dark theme" onclick="changeTheme('dark')">Dark theme</a></li>
-                        <li><a href="#" aria-label="Select light theme" onclick="changeTheme('light')">Light theme</a></li>
-                        <li><a href="#" aria-label="Select monochrome theme" onclick="changeTheme('monochrome')">Monochrome theme</a></li>
-                        <li><a href="#" aria-label="Increase text size" onclick="changeFontSize('increase')">Text size+</a></li>
-                        <li><a href="#" aria-label="Decrease text size" onclick="changeFontSize('decrease')">Text size-</a></li>
+                        <li><a href="#" aria-label="Select light theme" onclick="changeTheme('light')">Light theme</a>
+                        </li>
+                        <li><a href="#" aria-label="Select monochrome theme"
+                                onclick="changeTheme('monochrome')">Monochrome theme</a></li>
+                        <li><a href="#" aria-label="Increase text size" onclick="changeFontSize('increase')">Text
+                                size+</a></li>
+                        <li><a href="#" aria-label="Decrease text size" onclick="changeFontSize('decrease')">Text
+                                size-</a></li>
                     </ul>
                 </nav>
             </label>
@@ -53,7 +58,7 @@
     </section>
 
 
-    <main class="width-large center stack-medium">
+    <main class="stack-medium width-medium center">
         <!-- Landing section  - introductory text-->
         <section id="section-introduction" class="section-landing justified">
             <h2>The revolutionary web development agency</h2>
@@ -82,7 +87,7 @@
         </section>
 
         <!--  Meet the team section - biog and image of team -->
-        <section id="section-team" class="">
+        <section id="section-team">
             <h2>Meet the team</h2>
             <div class="line-height__expanded stack-small">
                 <div class="team-grid-container">
@@ -111,30 +116,27 @@
         </section>
 
         <!-- Contact section - contains contact form -->
-        <section id="section-contact">
+        <section id="section-contact" class="stack-medium">
             <h2>Get in touch</h2>
-            <div class="line-height__expanded stack-small center">
+            <div class="line-height__expanded center stack-small center">
                 <p>
-                    Need a class act to help you to realise your next web project? Fill in the form and we'll get right
+                    Need a class act to help you to realise your next web project?
+                </p>
+                <p>
+                    Fill in the form and we'll get right
                     back
                     to you.
                 </p>
             </div>
             <form class="contact-form">
-                <div class="form-element-container">
+                <div class="form-element-container stack-small">
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" aria-label="Name input" required
-                        style="margin-bottom: 10px;">
-
+                    <input type="text" id="name" name="name" aria-label="Name input" required>
                     <label for="company">Company Name:</label>
-                    <input type="text" id="company" name="company" aria-label="Company Name input" required
-                        style="margin-bottom: 10px;">
-
+                    <input type="text" id="company" name="company" aria-label="Company Name input" required>
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" aria-label="Email input" required
-                        style="margin-bottom: 10px;">
-
-                    <button type="submit">Submit</button>
+                    <input type="email" id="email" name="email" aria-label="Email input" required>
+                    <button class="form-button" type="submit">Submit</button>
                 </div>
             </form>
         </section>

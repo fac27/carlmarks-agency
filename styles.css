@@ -367,8 +367,8 @@ footer figure {
     color: var(--main-bg-colour);
 }
 
-[class^="width-"] {
-    max-width: 100%;
+[class*="width-"] {
+    max-width: 95%;
 }
 
 
@@ -389,6 +389,7 @@ footer figure {
         width: 30%;
         min-width: 24rem;
     }
+    
 }
 
 /* This applies from 600px onwards */

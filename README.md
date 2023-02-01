@@ -29,6 +29,10 @@ An intuitive and easy to navigate website, enormously improves my productivity t
 ![](assets/section-3-img.svg)
 ![](assets/footer-img.svg)
 
-Deployed website:
+## Deployed website:
 
 https://fac27.github.io/carlmarks-agency/
+
+## Clone this repo:
+
+git clone https://github.com/fac27/carlmarks-agency

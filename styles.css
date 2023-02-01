@@ -271,6 +271,20 @@ footer {
     align-items: center;
 }
 
+figure {
+    display: table;
+}
+
+figure img {
+    margin-left: 0.2rem;
+}
+
+figcaption {
+    display: table-caption;
+    caption-side: top;
+    text-align: center;
+}
+
 footer figure {
     padding: 10px;
 }

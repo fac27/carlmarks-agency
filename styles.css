@@ -61,6 +61,8 @@
 
 html {
     font-size: 20px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7.2rem;
 }
 
 body {
@@ -106,6 +108,8 @@ body {
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.2rem;
+    text-align: center;
+
 }
 
 h2 {
@@ -196,8 +200,6 @@ h2 {
     display: none;
 }
 
-/* Video background */
-
 .video-bg {
     width: 100vw;
     height: auto;
@@ -235,13 +237,10 @@ header {
     color: aliceblue;
 }
 
-header nav {
-}
-
-header nav a {
+#heading-nav a {
     text-decoration: none;
     color: var(--main-text-colour);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 nav a:hover {
@@ -268,6 +267,20 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+figure {
+    display: table;
+}
+
+figure img {
+    margin-left: 0.2rem;
+}
+
+figcaption {
+    display: table-caption;
+    caption-side: top;
+    text-align: center;
 }
 
 footer figure {
@@ -366,8 +379,8 @@ footer figure {
     color: var(--main-bg-colour);
 }
 
-[class^="width-"] {
-    max-width: 100%;
+[class*="width-"] {
+    max-width: 95%;
 }
 
 
@@ -388,6 +401,7 @@ footer figure {
         width: 30%;
         min-width: 24rem;
     }
+    
 }
 
 /* This applies from 600px onwards */

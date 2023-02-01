@@ -48,6 +48,7 @@ function openAccessibilityMenu(event) {
     // Set tabIndex to 0 if menu active otherwise set to -1 to avoid tabbing into menu
     a11yLinks.forEach((link) => {    
       link.tabIndex = (a11yTrigger.checked) ? 0 : -1;
+      link.ariaHidden = (a11yTrigger.checked) ? "false" : "true";
     });
   }
   // console.log(`${a11yLinks[0].tabIndex}`);

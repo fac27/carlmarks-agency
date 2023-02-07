@@ -6,6 +6,7 @@
     padding: 0;
 }
 
+/* Set up page theme colour variables */
 [data-theme="colour"] {
     --main-bg-colour: rgb(62, 68, 80);
     --main-text-colour: #fff;
@@ -16,6 +17,7 @@
     --team-bg-colour3: rgb(195, 255, 195);
     --form-bg-colour: rgb(191, 182, 199);
     --form-text-colour: #000;
+    --form-invalid-colour: #F00;
 }
 
 [data-theme="dark"] {
@@ -28,6 +30,7 @@
     --team-bg-colour3: rgb(65, 85, 65);
     --form-bg-colour: rgb(97, 90, 102);
     --form-text-colour: #fff;
+    --form-invalid-colour: #F00;
 }
 
 [data-theme="light"] {
@@ -40,6 +43,7 @@
     --team-bg-colour3: rgb(195, 255, 195);
     --form-bg-colour: rgb(219, 219, 219);
     --form-text-colour: #000;
+    --form-invalid-colour: #F00;
 }
 
 [data-theme="monochrome"] {
@@ -52,6 +56,7 @@
     --team-bg-colour3: rgb(148, 148, 148);
     --form-bg-colour: rgb(143, 143, 143);
     --form-text-colour: #000;
+    --form-invalid-colour: #555;
 }
 
 [data-theme="monochrome"] img,
@@ -130,7 +135,7 @@ h2 {
 }
 
 #a11y-icon {
-    z-index: 3                          ;
+    z-index: 3;
     position: absolute;
     right: 0;
     width: 3rem;
@@ -148,9 +153,7 @@ h2 {
     opacity: 100%;
 }
 
-#a11y-icon:focus {
-
-}
+#a11y-icon:focus {}
 
 #a11y-nav {
     display: inline-block;
@@ -248,8 +251,8 @@ nav a:hover {
 }
 
 header nav ol li {
-  list-style: none;
-  border-radius: 5px;
+    list-style: none;
+    border-radius: 5px;
 }
 
 /* Footer */
@@ -360,6 +363,15 @@ footer figure {
     ;
 }
 
+.form-element-container input:invalid {
+    border: 2px solid var(--form-invalid-colour);
+}
+
+.form-element-container input:invalid:after {
+    content: "*";
+    color: var(--form-invalid-colour);
+}
+
 .form-button {
     background-color: var(--main-bg-colour);
     color: var(--main-text-colour);
@@ -401,7 +413,7 @@ footer figure {
         width: 30%;
         min-width: 24rem;
     }
-    
+
 }
 
 /* This applies from 600px onwards */
@@ -409,17 +421,17 @@ footer figure {
     header nav {
         margin-block-start: 1em;
     }
-    
+
     header nav a {
         text-decoration: none;
         color: var(--main-text-colour);
         font-size: 1.5rem;
     }
-    
+
     nav a:hover {
         text-decoration: underline;
     }
-    
+
     header nav ol li {
         display: inline;
         padding: 10px;

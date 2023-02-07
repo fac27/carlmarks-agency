@@ -391,6 +391,10 @@ footer figure {
     color: var(--main-bg-colour);
 }
 
+/* 
+Set all 'width-<size>' CSS classes to 95% of screen width by default
+e.g. .width-small, .width-medium, .width-large ...
+*/
 [class*="width-"] {
     max-width: 95%;
 }
